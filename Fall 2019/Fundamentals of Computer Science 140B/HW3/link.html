@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Second Page</title>
+    <style>
+      h1, div, h2{
+        text-align: center;
+      }
+      img{
+        width: 25%;
+        height: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+    </style>
+    <script>
+    function math(){
+      var int1 = parseInt(window.prompt("Enter a number:"));
+      var int2 = parseInt(window.prompt("Enter another number:"));
+      var final= int1 + int2;
+      var responseScript = document.getElementById("response");
+      responseScript.innerHTML = "The total is " + final;
+      var commentScript = document.getElementById("comment");
+      commentScript.innerHTML = "This math isnt hard!";
+    }
+    </script>
+  </head>
+  <body onload="math()">
+    <h1>Welcome to the next page</h1>
+    <div><a href="index.html">Click here to head over to the first page</a></div>
+    <img src="chicken1.jpg" alt="A chicken">
+    <img src="chicken2.jpg" alt="Another chicken">
+    <h3> Here are some chicken's</h3>
+    <h1 id="response">PLACEHOLDER</h1>
+    <h2 id="comment">PLACEHOLDER</h2>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+Dusty Beehler
+HW 22
+3 November 2019
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>doing stuff</title>
+  </head>
+  <body>
+    <button onClick="displayText()">Click here!</button>
+    <h2 id="mainH2"></h2>
+    <p id="two"></p>
+    <script>
+      function displayText(){
+        var firstOut = document.getElementById("mainH2");
+        firstOut.innerHTML = "Hi...";
+        var secondOut = document.getElementById("two");
+        secondOut.innerHTML = "This is cool.";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOOPS!</title>
+  </head>
+  <body onload="average()">
+    <script>
+      function average(){
+        var total = 0;
+        var totalScore = 0;
+        for(var i =0; i <4; i++){
+          var score = parseInt(window.prompt("Enter the test scores:"));
+          totalScore += score;
+        }
+          var averageScore = totalScore/4;
+        document.writeln("<h1>The average score is " + averageScore + "</h1>");
+      }
+    </script>
+  </body>
+</html>

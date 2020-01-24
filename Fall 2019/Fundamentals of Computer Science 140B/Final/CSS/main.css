@@ -1,0 +1,45 @@
+/*
+Dusty Beehler
+Final
+Main CSS Page
+*/
+body{
+  background-image: url("../Images/Index/background.png");
+  background-color: #cccccc;
+}
+
+h1, h2{
+  text-align: center;
+  color: gray;
+}
+
+div{
+  text-align: center;
+}
+
+.images{
+  display: inline-block;
+}
+
+.imageLink{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 10%;
+  height: 10%;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+.ImageLinkNoResize{
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: black;
+  border-style: groove;
+}

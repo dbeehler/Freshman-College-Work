@@ -1,0 +1,25 @@
+p{
+  color: blue;
+}
+*{
+  text-align: center;
+}
+.firstPara{
+  background-color: lavender;
+}
+h1, div{
+  text-align: right;
+  background-color: pink;
+}
+div h1{
+  background-color: tan;
+}
+.greenSpan{
+  background-color: skyblue;
+}
+#firstH2{
+  color: purple;
+}
+#secondH2{
+  color: yellow;
+}

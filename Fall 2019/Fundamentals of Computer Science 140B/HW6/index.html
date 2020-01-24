@@ -1,0 +1,47 @@
+<!--
+Dusty Beehler
+9/15/2019
+Homework 6
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Some Math!</title>
+    <script>
+    function math(){
+      var numOne = parseInt(window.prompt("Enter a number!"));
+      var numTwo = parseInt(window.prompt("Enter another number!"));
+      if(numOne > numTwo){
+        var mainOut = document.getElementById("main");
+        mainOut.innerHTML = numOne + " is greater than " + numTwo;
+      }
+      else if (numOne < numTwo){
+        var mainOut = document.getElementById("main");
+        mainOut.innerHTML = numOne + " is smaller than " + numTwo;
+      }
+      else{
+        var mainOut = document.getElementById("main");
+        mainOut.innerHTML = numOne + " is equal to " + numTwo;
+      }
+      //I made it Math.abs so the number is never negative. Hopefully this is ok!
+      var difference = numOne - numTwo;
+      var difOut = document.getElementById("dif");
+      difOut.innerHTML = "the difference between the two is " + Math.abs(difference);
+    }
+    </script>
+    <style>
+    body{
+      background-color: grey;
+    }
+    h1{
+      text-align: center;
+      color: lightblue;
+    }
+    </style>
+  </head>
+  <body onload="math()">
+    <h1 id="main">PLACEHOLDER</h1>
+    <h1 id="dif">PLACEHOLDER</h1>
+  </body>
+</html>

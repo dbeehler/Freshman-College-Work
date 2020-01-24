@@ -1,0 +1,47 @@
+<!--
+Dusty Beehler
+Homework 16
+17 October 2019
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math With JavaScript</title>
+    <script>
+      //defintuon of main function
+      function findLarger(firstNum, secondNum){
+        var outPut = document.getElementById("output");
+        if(firstNum > secondNum)
+          outPut.innerHTML = firstNum + " Is greater than " + secondNum;
+        else if(secondNum > firstNum)
+          outPut.innerHTML = secondNum + " Is greater than " + firstNum;
+        else
+          outPut.innerHTML = firstNum + " Is equal to " + secondNum;
+      }
+
+      //this is a second functiion to call the first function with the updated numbers
+      //Not how I intended it to work, but it was the first work around in my head
+      function grabNumbers(){
+        var first = 0;
+        var second = 0;
+        first = parseInt(document.getElementById("num1").value);
+        second = document.getElementById("num2").value;
+        //here is the function call
+        findLarger(first, second);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Enter two numbers below and click the button to see whats larger</h1>
+    Enter a number: <input type="text" id="num1" value="0"> <br>
+    Enter another number: <input type="text" id="num2" value="0"><br>
+    <!--
+    I use a button to call the first fucntion to grab the numbers
+    It's not exactly how I wanted it to work, but it was the work around that popped
+    into my head
+    -->
+    <input type="button" onclick="grabNumbers()" value="Click me!">
+    <h2 id="output"></h2>
+  </body>
+</html>

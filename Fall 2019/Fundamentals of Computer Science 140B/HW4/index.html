@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Practice</title>
+    <script>
+    function math(){
+      var mainInt = parseInt(window.prompt("Enter a number!"));
+      if(mainInt > 30)
+        document.write("<h1>Your number is greater than 30!</h1>");
+      else if (mainInt > 20)
+        document.write("<h1> Your number is greater than 20!</h1>");
+      else if (mainInt > 10)
+        document.write("<h1> Your number is greater than 10!</h1>");
+      else if (mainInt == 10)
+        document.write("<h1>Your number is equal to 10!</h1>");
+      else
+        document.write("<h1> Your number is smaller than 10!</h1>");
+    }
+    </script>
+  </head>
+  <body onload="math()">
+  </body>
+</html>

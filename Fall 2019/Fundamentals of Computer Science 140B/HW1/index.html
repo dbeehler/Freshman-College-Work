@@ -1,0 +1,82 @@
+<!--
+Dusty Beehler
+HW1
+8/27/2019
+CSCI 140, Fall 2019
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dusty's HW1</title>
+    <style>
+    /* I wanted to add some CSS to see what I could do starting off. Sorry if it looks bad!*/
+
+    body{
+      background-color: Blue;
+      animation-name: colorChange;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    h2, h3, ol, ul, p, a, div{
+      color: lightgray;
+    }
+    hr{
+      color: white;
+    }
+    div{
+      text-align: center;
+    }
+    img{
+      animation: blink 3s;
+      animation-iteration-count: infinite;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @keyframes colorChange {
+      from{background-color: Blue}
+      to{background-color: Grey}
+    }
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <h2>Dusty's Small heading</h2>
+    <hr>
+    <p>
+      Dusty's First Paragraph. Possibly second. This isn't my first website! I thought this was really short
+      so I thought I would add to it. So I will tell you all the computer related classes I have taken.
+      I've taken Computer Science Principals, Java, C++, Visual Basic, C#, and Computer Systems and Networking
+      These are dual credit classes offered through Scott Community College.</p>
+    <hr>
+    <h3>These are my first programming languages</h3>
+    <ol>
+      <li>C++</li>
+      <li>Java</li>
+      <li>Visual Basic</li>
+    </ol>
+    <hr>
+    <h3>Here are my favorite programming languages</h3>
+    <ul>
+      <li>C#</li>
+      <li>Java</li>
+      <li>Html/JS(Soon to be)</li>
+    </ul>
+    <a href= "https://github.com/dbeehler" target="_blank">This is my github</a>
+    <hr>
+    <img src="ambrosechapel.jpg" alt= "This is the St. Ambrose Chapel">
+    <div> This is a blinking picture of the St. Ambrose chapel.</div>
+  </body>
+</html>

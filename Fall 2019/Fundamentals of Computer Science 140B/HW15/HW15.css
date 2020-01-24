@@ -1,0 +1,71 @@
+/*Dustys's CSS for Multi-colored Table*/
+table, th, td {
+  border: 6px solid green;
+  background-color: lightgray);
+  text-align: center;
+  border-collapse: collapse;
+}
+
+td {
+  width: 300px;
+  height: 300px;
+  color: rgba(255, 255, 255, .5);
+  font-size: 8em;
+  font-weight: 700;
+}
+
+body {
+  background-color: blue;
+}
+
+.textColor, h1 {
+  color: white;
+}
+
+.color1 {
+  background-color: rgb(255,36,128)
+}
+
+.color2 {
+  background-color: rgb(40%, 85%, 10%)
+}
+
+.color3 {
+  background-color: #000888
+}
+
+.color4 {
+  background-color: rgba(255,255,0,.5);;
+}
+
+.color5 {
+  color: rgb(200,0,0);
+  background-color: rgba(255,0,212, .4);
+}
+
+.color6 {
+  background-image: url("ambroseHall.jpg");
+  opacity: .9
+}
+
+.color7 {
+  background-color: hsl(120, 50%, 23%);
+}
+
+.color8 {
+  background-color: hsl(67, 23%, 12%);
+}
+
+.color9 {
+  background-color: rgba(000,000,255,.3)
+}
+
+div.a {
+  text-align: center;
+  font-size: 2em;
+  color: blue;
+}
+
+table {
+  margin: auto;
+}

@@ -1,0 +1,37 @@
+<!--
+Dusty Beehler
+24 October 2019
+HW19
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Return largest</title>
+    <style>
+      h1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Math</h1>
+    <script>
+    //function call
+      findLargest(parseInt(window.prompt("Enter the amount of POSITIVE numbers")));
+
+    //function definition
+      function findLargest(naturals){
+        var largest = 0;
+        for(var x = 0; x < naturals; x++){
+          var num = parseInt(window.prompt("Enter a number..."))
+          if(num > largest){
+            largest = num;
+          }
+        }
+        document.writeln("<h2>", largest + " Is the largest!", "</h2>")
+      }
+    </script>
+  </body>
+</html>

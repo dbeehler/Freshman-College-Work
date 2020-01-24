@@ -1,0 +1,73 @@
+/*
+Dusty Beehler
+Final
+Electronics CSS Page
+*/
+body{
+  background-image: url(../Images/Electronics/background.png);
+}
+
+*{
+  font-size: 24px;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.mainPics{
+  width: 25%;
+  height: 25%;
+}
+
+#drone{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#droneExplanation{
+  text-align: center;
+}
+
+video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pie, #pieTwo{
+  float: right;
+  display: inline-block;
+  margin-left: auto;
+}
+
+#pieExplanation{
+  text-align: right;
+}
+
+/*image links to other sites*/
+.imageLink{
+  display: block;
+  margin-left: auto;
+  width: 5%;
+  height: 5%;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: white;
+  border-style: groove;
+}
+
+.ImageLinkNoResize{
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: white;
+  border-style: groove;
+}

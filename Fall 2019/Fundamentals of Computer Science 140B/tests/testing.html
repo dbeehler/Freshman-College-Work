@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="button" onclick="findLargestArray()" value="Click me for custom numbers!">
+    <script>
+        function findLargestArray(){
+          var myArray = [4,3,4,4,4,7,7];
+          var total = 0;
+          for(int x = 0; x < myArray.length; x++){
+            if(x>0){
+              var numToCheck = myArray[x-1];
+              if(myArray[x]==numToCheck){
+                total++;
+              }
+            }
+          }
+          window.prompt(total);
+        }
+    </script>
+  </body>
+</html>

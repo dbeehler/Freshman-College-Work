@@ -1,0 +1,44 @@
+<!--
+Dusty Beehler
+27 October 2019
+HW20
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+    <input type="button" onclick="findArrayLargestUser()" value="Click me for custom numbers!">
+    <script>
+      var myArray = [4,22,-1,7,12,3,2];
+      var largest = 0;
+      //func call
+      findLargestArray(myArray);s
+      //func definition
+      function findLargestArray(mainArray){
+        for(var x=0; x < myArray.length; x++){
+          if(mainArray[x] > largest){
+            largest = mainArray[x];
+          }
+        }
+        document.writeln("The largest number in the array is " + largest);
+      }
+
+      //extra credit?
+      function findArrayLargestUser() {
+        var largest = 0;
+        var maxNum = parseInt(window.prompt("How many numbers are there?"));
+        var userArray = new Array(maxNum);
+        for(var x = 0; x < maxNum; x++){
+          userArray[x] = parseInt(window.prompt("Enter a number..."));
+          if(userArray[x] > largest){
+            largest = userArray[x];
+          }
+        }
+        document.writeln("The largest number from the numbers you entered is " + largest);
+      }
+    </script>
+  </body>
+</html>

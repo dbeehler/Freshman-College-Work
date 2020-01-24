@@ -1,0 +1,49 @@
+<!--
+Dusty Beehler
+9/17/2019
+Homework 7
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Overtime Pay</title>
+    <script>
+      function payCalculator(){
+        var payRate = parseFloat(window.prompt("Enter your regular pay rate!"));
+        var hourWork = parseInt(window.prompt("Enter your total hours worked!"));
+        var totalPay;
+        var overTimeHours
+        if(hourWork > 40 && hourWork <=54){
+          overTimeHours = hourWork-40;
+            totalPay =  (payRate*(hourWork-overTimeHours)) + ((payRate*1.5) * overTimeHours);
+            var mainOut = document.getElementById("main");
+            mainOut.innerHTML = "Your pay including overtime is $" + totalPay;
+        }
+        else if(hourWork > 54){
+          var doubleHours = hourWork-54;
+          overTimeHours = (hourWork-40) - doubleHours;
+          var overTimePay = (payRate*(hourWork-doubleHours-overTimeHours)) + ((payRate*1.5) * overTimeHours);
+          var doublePay = ((payRate*2) *doubleHours);
+          totalPay = overTimePay + ((payRate*2) * doubleHours);
+          var mainOut = document.getElementById("main");
+          mainOut.innerHTML = "Your pay including double time is $" + totalPay;
+        }
+        else{
+          var mainOut = document.getElementById("main");
+          mainOut.innerHTML = "Your pay is $" + (payRate*hourWork) + " with " + hourWork + " hours!";
+        }
+      }
+    </script>
+    <style>
+      h1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="payCalculator()">
+    <h1>Pay Calculator</h1>
+    <h1 id="main"> </h1>
+    <h1 id="side"> </h1>
+  </body>
+</html>

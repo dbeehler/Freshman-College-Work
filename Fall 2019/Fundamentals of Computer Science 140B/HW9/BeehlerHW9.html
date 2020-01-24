@@ -1,0 +1,31 @@
+<!--
+Dusty Beehler
+9/26/2019
+Homework 9
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>While Loop Math</title>
+    <script>
+    function math(){
+      var total = 0;
+      var count = 0;
+      while(count <= 10){
+        if(count >= 4 && count <=8){
+          if(count % 2 == 0){
+            total += count;
+            document.writeln("the running total is " + total + "</br>");
+          }
+        }
+        count++;
+      }
+      document.writeln("the final total is " + total);
+    }
+    </script>
+  </head>
+  <body onload="math()">
+
+  </body>
+</html>

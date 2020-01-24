@@ -1,0 +1,30 @@
+<!--
+Dusty Beehler
+9/19/2019
+Homework 8
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOOPS!</title>
+    <script>
+      function average(){
+        var total = 0;
+        var totalScore = 0;
+        while(total < 5){
+          var score = parseInt(window.prompt("Enter the test scores:"));
+          totalScore += score;
+          total++;
+        }
+        var averageScore = totalScore/5;
+        document.writeln("<h1>The average score is " + averageScore + "</h1>");
+      }
+    </script>
+    <style>
+    </style>
+  </head>
+  <body onload="average()">
+
+  </body>
+</html>
